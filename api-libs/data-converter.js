@@ -59,8 +59,12 @@ function serializeActions (actions, nonce) {
     }
 
     const payloadBuffer = Buffer.from(payload)
+    const payloadSize = Buffer.alloc(2)
+    payloadSize.writeUInt16BE(payloadBuffer.length, 0)
+
     result.push(Buffer.concat([
-      Buffer.from([actionId, payloadBuffer.length]),
+      Buffer.from([actionId]),
+      payloadSize,
       payloadBuffer
     ]))
   }

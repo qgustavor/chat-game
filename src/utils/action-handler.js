@@ -59,7 +59,7 @@ export async function handleAction (input, tickets, level, levels) {
 
     while (pointer <= actionData.length) {
       const actionKind = actionData[pointer++]
-      const payloadSize = actionData[pointer++]
+      const payloadSize = actionData[pointer++] * 256 + actionData[pointer++]
       const payload = actionData.slice(pointer, pointer += payloadSize)
       let bonusResult
 
