@@ -1,0 +1,9 @@
+{
+  "name": "chat-game",
+  "version": 2,
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+}

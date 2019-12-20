@@ -1,0 +1,11 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": "auth.uid != null",
+    "levels": {
+      "$level": {
+        ".read": true
+      }
+    }
+  }
+}

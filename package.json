@@ -1,0 +1,30 @@
+{
+  "name": "chat-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "googleapis": "^45.0.0",
+    "mithril": "^2.0.4",
+    "node-fetch": "^2.6.0",
+    "tweetnacl": "^1.0.1",
+    "tweetnacl-auth": "^1.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "file-loader": "^5.0.2",
+    "ignore-loader": "^0.1.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "standard": "^14.3.1",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "scripts": {
+    "start": "webpack src/index.js --output public/app.js -d --watch",
+    "build": "webpack src/index.js --output public/app.js -p",
+    "test": "standard src/**/*.js api/**/*.js"
+  }
+}
