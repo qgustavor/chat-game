@@ -7,7 +7,7 @@
   "dependencies": {
     "googleapis": "^45.0.0",
     "mithril": "^2.0.4",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "tweetnacl": "^1.0.1",
     "tweetnacl-auth": "^1.0.1"
   },
