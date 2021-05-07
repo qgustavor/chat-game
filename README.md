@@ -11,6 +11,8 @@ An adventure like game with a chat interface.
 1. Update `config.js`;
 1. Include `<script src="https://example.now.sh/app.js"></script>` in your website.
 
+🚧 **Important**: remember to update dependencies to avoid vulnerabilities and fix code that may break
+
 The following files and functions might need to be localized.
 
 * The entire `api-libs/parser.js` module;
